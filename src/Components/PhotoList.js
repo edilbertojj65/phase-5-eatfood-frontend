@@ -1,5 +1,5 @@
 import PhotoCard from './PhotoCard'
-debugger
+ 
 function PhotoList({ photos, onDeletePhoto, onUpdatePhoto}){
   debugger
     return (

@@ -16,12 +16,12 @@ function Login({ onLogin }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ name }),
-    }).then((r) => {
+    }  ).then((r) => {
       if (r.ok) {
         return r.json();
       }
       return null;
-    }).then((user) => onLogin(user));
+    }  ).then((user) => onLogin(user));
   }
   
   return (
@@ -35,7 +35,7 @@ function Login({ onLogin }) {
         onChange={(e) => setUser_name(e.target.value)}
       />
       <button type="submit">Login</button>
-      <Link to="Logout">Click Here to Login</Link>
+       
         
     </form>
   );

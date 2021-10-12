@@ -8,7 +8,7 @@ function NewGroupUserForm({ onAddGroup_user}){
      
 
     function handleSubmit(e) {
-      debugger 
+       
         e.preventDefault();
         fetch("/group_users", {
           method: "POST",

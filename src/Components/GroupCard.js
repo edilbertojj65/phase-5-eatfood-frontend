@@ -1,7 +1,7 @@
 
 function GroupCard({group, onDeleteGroup, onUpdateGroup }){
     const{id , name , typeName, user_id} = group;
-debugger
+ 
     function handleDeleteClick() {
         fetch(`/groups/${id}`, {
           method: "DELETE",
@@ -30,7 +30,7 @@ debugger
 
 
       return (
-        <li className="card">
+        <li className="CardGroup">
           {/* <img src={url} alt={fileName} /> */}
           <h4>Name Group: {id} {name} </h4>
           <p>type Name: {typeName} </p>

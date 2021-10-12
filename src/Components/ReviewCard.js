@@ -1,7 +1,8 @@
 
 function ReviewCard({review, onDeleteReview, onUpdateReview }){
-    const{id , comment , rating, photo_id, group_user_id} = review;
-debugger
+    const{id , comment , rating, photo_id, group_user_id, } = review;
+    const { url ,fileName } = review.photo
+   debugger
     function handleDeleteClick() {
         fetch(`/reviews/${id}`, {
           method: "DELETE",
@@ -29,7 +30,7 @@ debugger
 
       return (
         <li className="card">
-          {/* <img src={url} alt={fileName} /> */}
+          <img src={url} alt={fileName} />
           <h4>Comment Text: { comment} </h4>
           <p>rating Value: {rating} </p>
           <p>photo_id Value: {photo_id} </p>

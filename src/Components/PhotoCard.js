@@ -2,7 +2,7 @@
 
 function PhotoCard({photo, onDeletePhoto, onUpdatePhoto }){
     const{id , namePhoto , url, fileName, user_id, group_user_id} = photo;
-debugger
+ 
     function handleDeleteClick() {
         fetch(`/photos/${id}`, {
           method: "DELETE",

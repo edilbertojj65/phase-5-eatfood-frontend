@@ -1,14 +1,14 @@
 import { useState } from "react";
 
 function NewReviewForm({onAddReview}){
-debugger
+  
     const [comment, setComment] = useState("");
     const [rating, setRating] = useState("");
     const [photo_id , setPhoto] = useState("");
     const [group_user_id, setGroup] = useState("");
-debugger
+ 
     function handleSubmit(e) {
-      debugger
+       
         e.preventDefault();
         fetch("/reviews", {
           method: "POST",

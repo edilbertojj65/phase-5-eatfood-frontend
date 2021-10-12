@@ -1,16 +1,16 @@
 import { useState } from "react";
 
 function NewPhotoForm({onAddPhoto}){
-debugger
+ 
     const [namePhoto, setName] = useState("");
     const [url, setUrl] = useState("");
     const [fileName , setFilename] = useState("");
     const [user_id , setUser] = useState("");
     const [group_user_id , setGroup] = useState("");
 
-debugger
+ 
     function handleSubmit(e) {
-      debugger
+       
         e.preventDefault();
         fetch("/photos", {
           method: "POST",

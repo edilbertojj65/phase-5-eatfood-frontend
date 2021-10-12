@@ -31,7 +31,7 @@ debugger
 
 
       return (
-        <li className="card">
+        <li className="CardUser">
           {/* <img src={url} alt={fileName} /> */}
           <h4>Name User: {id} {name} </h4>
           <p>Email: {email} </p>

@@ -16,6 +16,7 @@ nav {
   top: 0;
   left: 0.8;
   right: 0;
+  background-color: rgb(20, 205, 238)
 }
 
 nav a {
@@ -24,7 +25,7 @@ nav a {
   margin: 0 1rem;
   text-decoration: none;
   font-size: 1.2em;
-  color: firebrick;
+  color: rgb(20, 18, 18);
   border-bottom: 2px solid firebrick;
   transition: 0.1s;
 }
@@ -58,7 +59,7 @@ main {
   padding: 0 1rem;
 }
 
-.new-appo-form {
+.new-photo-form {
   padding: 2rem 1rem;
   margin: 2rem 0;
   background-color: rgba(181, 250, 181, 0.5);
@@ -69,10 +70,33 @@ main {
 
 .card {
   margin: 1rem;
+  
+ 
+}
+
+.CardUser {
+  margin: 1rem;
+  border: 3px solid #ddc21dc9;
+
+}
+
+.CardUser{
+  margin: 1rem;
+  border: 3px solid #ddc21dc9;
+
+}
+
+.CardGroup{
+  margin: 1rem;
+  border: 3px solid #ddc21dc9;
+
+
 }
 
 .card img {
   width: 100%;
+  border: red;
+  border: 5px solid #ddc21dc9;
 }
 
 .card button {
@@ -100,18 +124,9 @@ main {
     width: calc(20% - 2rem);
   }
 }
-
-input {
-  padding: 0.25rem;
-  border: none;
+button {
+  padding: 0.25rem 1rem;
   font-family: inherit;
-  font-size: 1.2em;
-  border-bottom: 2px solid gray;
-  transition: all 0.2s;
-  width: 100%;
-}
-
-input:focus {
-  outline: none;
-  border-bottom: 2px solid var(--green);
+  border: none;
+  cursor: pointer;
 }

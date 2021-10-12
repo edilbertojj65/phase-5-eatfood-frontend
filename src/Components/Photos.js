@@ -33,7 +33,7 @@ function Photos () {
     });
     setPhotos(updatedphotosArray);
   }
-debugger
+ 
   const displayedPhoto = photos.filter((photo) => {
     return photo.namePhoto.toLowerCase().includes(searchTerm.toLowerCase());
   });

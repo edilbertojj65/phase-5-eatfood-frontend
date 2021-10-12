@@ -1,7 +1,7 @@
 import ReviewCard from './ReviewCard'
-debugger
+ 
 function ReviewList({ reviews, onDeleteReview, onUpdateReview}){
-  debugger
+   
     return (
     
         <ul className="cards">

@@ -29,7 +29,7 @@ debugger
 
 
       return (
-        <li className="card">
+        <li className="CardUser">
           {/* <img src={url} alt={fileName} /> */}
           <h4>Group User Id: {id}   </h4>
           <p>Group Id: {group_id} </p>
