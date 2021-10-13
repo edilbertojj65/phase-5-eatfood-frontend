@@ -7,7 +7,6 @@ import Reviews from './Reviews';
 import Users from './Users';
 import Groups from './Groups';
 import Login from './Login';
-import Logout from './Logout';
 import GroupsUser from './GroupsUser';
 import { useState, useEffect } from "react";
 import Header from "./Header";
@@ -38,8 +37,6 @@ function App() {
       <Router>
         <div>
           <nav>
-            {/* <NavLink to="/login">Login</NavLink>
-            <NavLink to="/logout">Logout</NavLink> */}
             <NavLink to="/photos">Photos</NavLink>
             <NavLink to="/reviews">Reviews</NavLink>
             <NavLink to="/users">Users</NavLink>
@@ -47,9 +44,11 @@ function App() {
             <NavLink to="/group_users">Groups User</NavLink>
           </nav>
 
-          {/* A <Switch> looks through its children <Route>s and
-           renders the first one that matches the current URL. */}
+           
           <Switch>
+          <Route exact path="/">
+            <Login onLogin={handleLogin} />
+            </Route>
             <Route exact path="/Photos">
               <Photos />
             </Route>
@@ -57,10 +56,6 @@ function App() {
             <Route exact path="/Login">
             <Login onLogin={handleLogin} />
             </Route>
-
-            {/* <Route exact path="/Logout">
-              <Logout />
-            </Route> */}
 
             <Route exact path="/Reviews">
               <Reviews />
@@ -75,9 +70,7 @@ function App() {
             <Route exact path="/group_users">
               <GroupsUser />
             </Route>
-            <Route exact path="/">
-              <Reviews />
-            </Route>
+            
           </Switch>
         </div>
       </Router>

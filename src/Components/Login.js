@@ -1,14 +1,12 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
  
-
-debugger
 function Login({ onLogin }) {
   const [name, setUser_name] = useState("");
-  debugger
+ 
 
   function handleSubmit(e) {
-    debugger
+    
     e.preventDefault();
     fetch("/login", {
       method: "POST",

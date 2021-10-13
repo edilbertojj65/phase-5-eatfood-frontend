@@ -37,7 +37,6 @@ function NewGroupUserForm({ onAddGroup_user}){
         <h2>New Group User</h2>
         <form onSubmit={handleSubmit}>
         
-
         <input
          type="text"
          name="group_id"
@@ -54,12 +53,9 @@ function NewGroupUserForm({ onAddGroup_user}){
          onChange={(e) => setName (e.target.value)}
     
          /> 
-
-
         <button type="submit">Add Group</button>
         </form>
-    
-    
+       
         </div>
     );
     

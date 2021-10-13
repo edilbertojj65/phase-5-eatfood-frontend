@@ -16,7 +16,7 @@ nav {
   top: 0;
   left: 0.8;
   right: 0;
-  background-color: rgb(20, 205, 238)
+  border: 5px solid hsl(334deg 12% 82% / 79%)
 }
 
 nav a {
@@ -63,7 +63,44 @@ main {
   padding: 2rem 1rem;
   margin: 2rem 0;
   background-color: rgba(181, 250, 181, 0.5);
+  border: 5px solid hsl(334deg 12% 82% / 79%)
 }
+
+
+.new-review-form {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: rgba(181, 250, 181, 0.5);
+  border: 5px solid hsl(334deg 12% 82% / 79%)
+
+}
+
+.new-user-form {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: rgba(181, 250, 181, 0.5);
+  border: 5px solid hsl(334deg 12% 82% / 79%)
+
+
+}
+
+.new-group-form {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: rgba(181, 250, 181, 0.5);
+  border: 5px solid hsl(334deg 12% 82% / 79%)
+
+}
+
+.new-group_user-form {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: rgba(181, 250, 181, 0.5);
+  border: 5px solid hsl(334deg 12% 82% / 79%)
+
+
+}
+
 .cards {
   list-style: none;
 }
@@ -89,7 +126,16 @@ main {
 .CardGroup{
   margin: 1rem;
   border: 3px solid #ddc21dc9;
+   
 
+}
+
+li.CardGroup {
+  background-color: hsl(54deg 21% 92%);
+}
+
+li.CardUser {
+  background-color: hsl(54deg 21% 92%);
 
 }
 

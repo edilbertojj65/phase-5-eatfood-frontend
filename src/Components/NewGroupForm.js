@@ -43,28 +43,21 @@ function NewGroupForm({ onAddGroup}){
          placeholder="Name Group"
          value={name}
          onChange={(e) => setName(e.target.value)}
-    
-         />
-
+        />
         <input
          type="text"
          name="typeName"
          placeholder="Type Name"
          value={typeName}
          onChange={(e) => setTypeName(e.target.value)}
-    
-         /> 
-
-
+        /> 
       <input
          type="text"
          name="user_id"
          placeholder="User Id"
          value={user_id}
          onChange={(e) => setUser(e.target.value)}
-    
-         />
-    
+        />
         <button type="submit">Add Group</button>
         </form>
     
