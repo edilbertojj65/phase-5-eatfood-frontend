@@ -1,6 +1,9 @@
 {
   "name": "phase-5-eatfood-frontend",
   "version": "0.1.0",
+  "engines": {
+    "node": "v15.9.0"
+  },
   "private": true,
   "proxy": "http://localhost:3000",
   "dependencies": {
